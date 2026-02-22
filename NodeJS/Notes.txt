@@ -1,0 +1,19 @@
+APIs in Backend Development
+
+/ : Root APIs  (GET)
+/about : About Page (GET)
+/contact : Contact Page (GET)
+/system : Server Info (GET)
+/senddata : (POST) Status Code 201
+/viewdata : (GET)
+
+Rest All APIs display Error Page with Status Code 404.
+
+Run Node File : node server.js 
+End Server Request : node --watch server.js
+
+To test POST, we use POSTMAN. We send data in POST Method Testing, but how do we receive that data at Server? 
+We send data using req.body, but it is an ExpressJS feature and not HTTP Feature. Instead we use req.on method in HTTP to recieve data.
+
+req.param
+req.query 
