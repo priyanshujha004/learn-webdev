@@ -17,3 +17,26 @@ We send data using req.body, but it is an ExpressJS feature and not HTTP Feature
 
 req.param
 req.query 
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+File System / Path Module
+
+fs.mkdir(directory_name,{recursive:True}) - Makes Directory Folder
+fs.readdir() - Reads Directory
+
+Synchronous
+
+fs.readFileSync(file_name) - Syncs and Reads files
+fs.writeFileSync(file_name) - Overwrites if available, else creates a file to write.
+fs.appendFileSync(file_name) - Appends File
+fs.unlinkSync(file_name) - Deletes files.
+
+Asynchoronous
+
+fs.readFile(file_name,callback);
+fs.writeFile(file_name)
+fs.appendFile(file_name)
+fs.unlink(file_name)
+fs.rename(file_name)
+
+Datalog & BackupLog Concepts
