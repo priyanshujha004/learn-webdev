@@ -158,8 +158,10 @@ hello();
 const hi = () => { // Declaration of Arrow Function
     console.log(this); // Prints the Global Context of the Function.
     let username = "Priyanshu";
-    console.log(`Hi ${this.username}`); // Prints undefined as this keyword does not refer to the current context of the object in arrow functions, it refers to the global context of the window object.
-}
+    console.log(`Hi ${this.username}`); // Prints undefined as this keyword does not refer to the current context of the object in arrow functions, 
+    // It refers to the global context of the window object in the browser but in NodeJS, it refers to the global context of the module.
+    // Value of this keyword in the browser is Window Object.
+} 
 hi();
 
 const addone = (num1,num2) => {
