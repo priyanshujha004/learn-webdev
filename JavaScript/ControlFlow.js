@@ -91,3 +91,46 @@ console.log("Val6 : " + val6);
 
 const price = 99;
 price>100 ? console.log("Expensive") : console.log("Affordable");
+
+// Iterations 
+let array = ["Hello","Priyanshu","Ramit"];
+for (let index=0; index < array.length; index++){
+    const element = array[index];
+    console.log(element);
+}
+
+for(let i=0; i<10; i++){
+    if(i==5){
+        console.log("Detected 5");
+        continue;
+    }
+    console.log(`Value of i is ${i}`);
+}
+for(let i=0; i<10; i++){
+    if(i==5){
+        console.log("Detected 5");
+        break;
+    }
+    console.log(`Value of i is ${i}`);
+}
+
+// While Syntax
+let count = 0;
+while(count<5){
+    console.log(`Count is ${count}`);
+    count++;
+}
+
+let myArray = ["Hello","Priyanshu","Ramit"];
+let counter = 0;
+while(counter < myArray.length){
+    console.log(myArray[counter]);
+    counter++;
+}
+
+// Do While Syntax
+let ct = 1;
+do{
+    console.log(`Count is ${ct}`);
+    ct++;
+}while(ct<=5);
