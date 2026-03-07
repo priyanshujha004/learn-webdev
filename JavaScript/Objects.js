@@ -176,4 +176,3 @@ const jsonData = {
     "age":21,
     "course":"CS",
 };
-  

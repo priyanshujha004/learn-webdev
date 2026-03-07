@@ -134,3 +134,92 @@ do{
     console.log(`Count is ${ct}`);
     ct++;
 }while(ct<=5);
+
+// // ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// For-Of Loops For Iterating Over Arrays, Strings, Maps, Sets, etc. (Iterable Objects)
+
+const greetings = "Hello world!"
+for (const greet of greetings) {
+    console.log(`Each char is ${greet}`)
+}
+
+// Iterating Over The Object Using For...In Loops
+const myObject = {
+    js: 'javascript',
+    cpp:'c++',
+    rb:'ruby',
+    py:'python'
+}
+
+for(const key in myObject){
+    console.log(`${key} : ${myObject[key]}`); // Accessing Key & Value Separtely
+}
+
+const pgm = ['java','cpp','js']
+for(const key in pgm){
+    console.log(key); // For-In Returns Key (here: index) of Array
+    console.log(pgm[key]); // Returns Value of Array Using Index.
+}
+
+// Difference Between For-Of & For-In Loops In Array Iterations 
+
+const arr = [1, 2, 3, 4, 5]
+for (const num of arr) {
+    console.log(num); // For-Of Returns Value of Array
+}
+
+for(const num in arr){
+    console.log(num); // For-In Returns Key (here: index) of Array
+    console.log(arr[num]); // Returns Value of Array Using Index.
+}
+
+// // For-Each Loops ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const coding = ['java','cpp','js','py','ruby']
+
+coding.forEach(function (item) {  // This function is callback function, hence it does not have it's name.
+    console.log(item); // Returns Value of Array
+})
+
+coding.forEach((item)=> { // Callback Function Using Arrow Function Syntax
+    console.log(item); // Returns Value of Array
+})
+
+function printMe(item){
+    console.log(item); // Returns Value of Array
+}
+coding.forEach(printMe); // Callback Function Using Function Call
+
+coding.forEach((item, index, arr)=>{ // Multiple Paramters in For-Each Loop
+    console.log(item,index,arr);
+})
+
+// Trying To Return Value From For-Each Loop
+
+const values = coding.forEach((item)=>{
+    console.log(item); // Returns Value of Array
+    return item; // forEach does not return anything, it returns undefined.
+})
+console.log(values);
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------
+const myCode = [{  // Array of Objects Iteration Using For-Each Loop
+    name:'js',
+    type:'programming language'
+    },
+    {
+    name:'python',
+    type:'programming language'
+    },
+    {
+    name:'java',
+    type:'programming language'
+    }
+]
+
+myCode.forEach((item,)=>{
+    console.log(item.name);
+    console.log(item.type);
+})
+// ----------------------------------------------------------------------------------------------------------------------------------------------------
