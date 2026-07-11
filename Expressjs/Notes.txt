@@ -1,0 +1,7 @@
+GET /users
+GET /user/id 
+POST /create
+PUT  /edit/id
+DELETE /delete/id 
+
+Creating APIs using express.
