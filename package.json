@@ -1,0 +1,20 @@
+{
+  "name": "webdev",
+  "version": "1.0.0",
+  "description": "🚀 Web Development Learning Journey",
+  "homepage": "https://github.com/priyanshujha004/learn-webdev#readme",
+  "bugs": {
+    "url": "https://github.com/priyanshujha004/learn-webdev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyanshujha004/learn-webdev.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
